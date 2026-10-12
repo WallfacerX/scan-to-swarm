@@ -218,3 +218,38 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Terraform (keep .terraform.lock.hcl in version control)
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.plan
+tfplan
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.json.example
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Local credentials and environment settings
+.env.*
+!.env.example
+.aws/
+credentials
+credentials.json
+*.pem
+*.key
+
+# Local IDE files
+.idea/
+.vscode/
+*.iml
+.DS_Store
